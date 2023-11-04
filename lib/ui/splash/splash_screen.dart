@@ -1,6 +1,6 @@
 import 'dart:async';
 
-import 'package:chat_app/ui/auth/login/login_screen.dart';
+import 'package:chat_app/ui/auth/register/register_screen.dart';
 import 'package:flutter/material.dart';
 
 class SplashScreen extends StatelessWidget {
@@ -9,7 +9,7 @@ class SplashScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     Timer(Duration(seconds: 3), () {
-      Navigator.of(context).pushReplacementNamed(LoginScreen.routeName);
+      Navigator.of(context).pushReplacementNamed(RegisterScreen.routeName);
     });
     return Scaffold(
       body: Image.asset(
